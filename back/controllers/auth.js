@@ -22,6 +22,7 @@ export const login = async (req, res, next) => {
         createError({ status: 404, message: 'User not found with the email' }),
       );
     }
+    
     const isPasswordCorrect = await bcryptjs.compare(
       req.body.password,
       user.password,
