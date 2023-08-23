@@ -1,0 +1,9 @@
+.container {
+	display: flex;
+	gap: 12rem;
+	background-color: goldenrod;
+	padding: 5rem;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+}
